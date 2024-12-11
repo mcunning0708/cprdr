@@ -1,9 +1,8 @@
 Package: cprdr
 Title: Reads and processes CPRD AURUM and GOLD files ....
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Author: Mark Cunningham
+Maintainer: Mark Cunningham <mark.cunningham@imperial.ac.uk>
 Description: A package for reading and processing CPRD Primary Care Data.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
