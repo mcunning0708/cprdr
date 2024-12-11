@@ -3,4 +3,5 @@
 export("%>%")
 export(fnAUobs_extract_patids)
 export(fnAUread_tab_obs)
+export(read_aurum_obs)
 importFrom(magrittr,"%>%")
