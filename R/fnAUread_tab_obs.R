@@ -10,22 +10,22 @@
 #' fnAUread_tab_obs( "Observation_001.txt" )
 fnAUread_tab_obs <-function (pDatafile){
   #'
-  ldf_read <- readr::read_tsv ( file = pDatafile, col_types = cols(
-    patid = col_character(),
-    consid = col_character(),
-    pracid = col_double(),
-    obsid = col_character(),
-    obsdate = col_date(format = "%d/%m/%Y"),
-    enterdate = col_date(format = "%d/%m/%Y"),
-    staffid = col_character(),
-    parentobsid = col_character(),
-    medcodeid = col_character(),
-    value = col_double(),
-    numunitid = col_double(),
-    obstypeid = col_double(),
-    numrangelow = col_double(),
-    numrangehigh = col_double(),
-    probobsid = col_character()  )
+  ldf_read <- readr::read_tsv ( file = pDatafile, col_types = readr::cols(
+    patid = readr::col_character(),
+    consid = readr::col_character(),
+    pracid = readr::col_double(),
+    obsid = readr::col_character(),
+    obsdate = readr::col_date(format = "%d/%m/%Y"),
+    enterdate = readr::col_date(format = "%d/%m/%Y"),
+    staffid = readr::col_character(),
+    parentobsid = readr::col_character(),
+    medcodeid = readr::col_character(),
+    value = readr::col_double(),
+    numunitid = readr::col_double(),
+    obstypeid = readr::col_double(),
+    numrangelow = readr::col_double(),
+    numrangehigh = readr::col_double(),
+    probobsid = readr::col_character()  )
   )
 
   return( ldf_read)
