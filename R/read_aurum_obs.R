@@ -1,12 +1,12 @@
 #' Read the contents of an AURUM tsv Observation file into a data frame
 #'
-#' @param pDatafile the filename of a single AURUM Extract Observation
+#' @param pDatafile: the filename of a single AURUM Extract Observation
 #'
 #' @return a tibble containing the contents of a single AURUM observation file
 #' @export
 #'
 #' @examples
-#' read_aurum_obs( "Observation_001.txt" )
+#' read_aurum_obs( "Observation_002.txt" )
 read_aurum_obs <-function (pDatafile){
   #'
   ldf_read <- readr::read_tsv ( file = pDatafile, col_types = readr::cols(
